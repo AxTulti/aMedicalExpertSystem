@@ -1,0 +1,14 @@
+¿El inicio de los síntomas fue súbito o repentino?
+¿Presenta déficit focal súbito como parálisis facial o dificultad para hablar?
+¿Presenta una cefalea explosiva (el peor dolor de su vida) acompañada de náuseas?
+¿Presenta fiebre alta, fotofobia y rigidez de nuca?
+¿El síntoma principal es el deterioro cognitivo progresivo (pérdida de memoria)?
+¿Existen antecedentes de riesgo vascular o el deterioro ocurre de forma escalonada?
+¿El síntoma principal es el temblor?
+¿Se trata de un temblor en reposo que se acompaña de rigidez muscular?
+¿El síntoma principal son cefaleas (dolores de cabeza) recurrentes?
+¿El dolor es de tipo unilateral (un solo lado) y pulsátil?
+¿El dolor es periocular (alrededor del ojo) y de intensidad extrema?
+¿El dolor es opresivo (como una banda apretada) de intensidad leve a moderada?
+¿Ha tenido crisis convulsivas recurrentes o episodios de pérdida de conciencia?
+¿Presenta síntomas neurológicos en "brotes" (neuritis óptica, debilidad) que aparecen y desaparecen en el tiempo?
