@@ -1,26 +1,25 @@
 # Evidencia 1: Proyecto Integrador  
-## Diagrama de Flujo y Fuentes para el Diagnóstico  
 
-### 👥 Equipo 2
+## Equipo 2
 - Emilio Estrada Pérez || A01770665
 - Axel Yael Rodríguez Romero || A01667521
 - Juan Diego Rodríguez Espinoza || A01667431
 
 ---
 
-## 📌 Nota
+## Nota
 El presente diagrama de flujo constituye una herramienta de apoyo para la orientación diagnóstica basada en la identificación de signos y síntomas clínicos iniciales. Las decisiones representadas se fundamentan en información proveniente de fuentes médicas reconocidas; sin embargo, se trata de un modelo simplificado desarrollado con fines académicos por estudiantes de Ingeniería en Datos y Matemáticas (IDM).  
 
 Es importante destacar que este esquema no sustituye una valoración médica profesional ni el uso de estudios clínicos complementarios (como análisis de laboratorio o estudios de imagen) necesarios para establecer un diagnóstico definitivo. Por lo tanto, ante la presencia de cualquier síntoma neurológico, se recomienda acudir con un especialista de la salud para una evaluación adecuada.  
 
 ---
 
-## 🖼️ Diagrama de Flujo
-_Subir imagen pendiente_
+## Diagrama de Flujo
+<img width="1920" height="1080" alt="Proyecto_Integrador_Diagrama" src="https://github.com/user-attachments/assets/9d6d43f5-25b8-4329-9223-cb40a11b69c0" />
 
 ---
 
-## 📚 Fuentes para el Diagnóstico  
+## Fuentes para el Diagnóstico  
 
 **Diagnóstico 1: ACV Isquémico**  
 American Stroke Association. (2021). *Ischemic Stroke (Clots).*  
