@@ -218,7 +218,7 @@ class MedicalDiagnosis(KnowledgeEngine):
     def CefaleaTensional(self):
         print(diagnoses[10])
     
-    @Rule(Question(number = L(12), answer = "No"))
+    @Rule(Question(number = L(13), answer = "Sí"))
     def EsclerosisMúltiple(self):
         print(diagnoses[11])
     
