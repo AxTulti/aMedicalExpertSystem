@@ -15,7 +15,7 @@ Es importante destacar que este esquema no sustituye una valoración médica pro
 ---
 
 ## Diagrama de Flujo
-<img width="1920" height="1080" alt="Proyecto_Integrador_Diagrama" src="https://github.com/user-attachments/assets/9d6d43f5-25b8-4329-9223-cb40a11b69c0" />
+<img width="1920" height="1080" alt="Proyecto_Integrador_Diagrama" src="https://github.com/user-attachments/assets/3cbecf13-ac63-44c1-b8c1-8682e45961fc" />
 
 ---
 
