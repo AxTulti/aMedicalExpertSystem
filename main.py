@@ -20,7 +20,12 @@ def binary_question(prompt:str, choices = ['Sí', 'No']) -> bool:
 with open('questions.txt', 'r', encoding='utf-8') as file:
     questions = file.readlines()
     questions = [question.strip() for question in questions]
+    
+# ### Reading Diagnoses from 'diagnoses.txt'
 
+with open('diagnoses.txt', 'r', encoding='utf-8') as file:
+    diagnoses = file.readlines()
+    diagnoses = [diagnosis.strip() for diagnosis in diagnoses]
 
 # #### Create Question Class
 
@@ -41,7 +46,7 @@ class Question(Fact):
     
 
 
-# ### Knoladge Engine
+# ### Knowledge Engine
 
 class MedicalDiagnosis(KnowledgeEngine):
     
@@ -63,6 +68,7 @@ class MedicalDiagnosis(KnowledgeEngine):
         yield Fact(action="Diagnose")
 
     # Questions
+    
     @Rule(NOT(Question(number=L(0))))
     def question0(self):
         answer: str = binary_question(questions[0])
@@ -73,22 +79,20 @@ class MedicalDiagnosis(KnowledgeEngine):
     def question1(self):
         answer: str = binary_question(questions[1])
         self.declare(Question(number=1, answer=answer))
-        
-    
-    
-    @Rule(NOT(Question(number = L(2))), 
-              Question(number=L(0), answer=L('Sí')), 
-              Question(number = L(1), answer = L('Sí')))
+
+    @Rule(NOT(  Question(number = L(2))), 
+                Question(number=L(0), answer=L('Sí')), 
+                Question(number = L(1), answer = L('Sí')))
     def question2(self):
         answer: str = binary_question(questions[2])
         self.declare(Question(number=2, answer=answer))
     
     
     @Rule(NOT(Question(number = L(3))),
-          OR(
-              Question(number = L(0), answer = L('No')),
-              Question(number = L(1), answer = L('No'))
-          ))
+            OR(
+                Question(number = L(0), answer = L('No')),
+                Question(number = L(1), answer = L('No'))
+            ))
     def question3(self):
         answer: str = binary_question(questions[3])
         self.declare(Question(number=3, answer=answer))
@@ -167,9 +171,62 @@ class MedicalDiagnosis(KnowledgeEngine):
     def question13(self):
         answer: str = binary_question(questions[13])
         self.declare(Question(number=13, answer=answer))
-        
-        
 
+    # Diagnoses
+    
+    @Rule(Question(number = L(2), answer = "Sí"))
+    def ACVHemorragico(self):
+        print(diagnoses[0])
+        
+    @Rule(Question(number = L(2), answer = "No"))
+    def ACVIsquemico(self):
+        print(diagnoses[1])
+        
+    @Rule(Question(number = L(3), answer = "Sí"))
+    def Meningitis(self):
+        print(diagnoses[2])
+    
+    @Rule(Question(number = L(5), answer = "Sí"))
+    def DemenciaVascular(self):
+        print(diagnoses[3])
+    
+    @Rule(Question(number = L(5), answer = "No"))
+    def Alzheimer(self):
+        print(diagnoses[4])
+    
+    @Rule(Question(number = L(7), answer = "Sí"))
+    def Parkinson(self):
+        print(diagnoses[5])
+    
+    @Rule(Question(number = L(7), answer = "No"))
+    def TemblorEsencial(self):
+        print(diagnoses[6])
+    
+    @Rule(Question(number = L(9), answer = "Sí"))
+    def Migraña(self):
+        print(diagnoses[7])
+    
+    @Rule(Question(number = L(12), answer = "Sí"))
+    def Epilepsia(self):
+        print(diagnoses[8])
+    
+    @Rule(Question(number = L(10), answer = "Sí"))
+    def CefaleaEnRacimos(self):
+        print(diagnoses[9])
+    
+    @Rule(Question(number = L(11), answer = "Sí"))
+    def CefaleaTensional(self):
+        print(diagnoses[10])
+    
+    @Rule(Question(number = L(12), answer = "No"))
+    def EsclerosisMúltiple(self):
+        print(diagnoses[11])
+    
+    @Rule(Question(number = L(11) | L(13), answer = "No"))
+    def Masinformacion(self):
+        print(diagnoses[12])
+
+# ### Run Medical Diagnosis
 
 engine = MedicalDiagnosis()
 engine.reset()
